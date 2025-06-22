@@ -2,55 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mohammed Omer | DevOps Engineer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/images/favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Mohammed Omer</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="resume.pdf" download>Resume</a></li>
+  <div class="container">
+    <header>
+      <h1>Mohammed Omer</h1>
+      <p>DevOps Engineer | Automating Cloud & CI/CD</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Results-driven DevOps Engineer with expertise in automating infrastructure, deploying scalable AWS apps, and optimizing cloud environments. Proven in CI/CD, IaC, Kubernetes, Docker, and cloud monitoring. Passionate about automation and continuous learning.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Tech Stack</h2>
+      <ul>
+        <li>AWS</li>
+        <li>Kubernetes</li>
+        <li>Docker</li>
+        <li>GitHub Actions</li>
+        <li>Terraform</li>
+        <li>Python</li>
+        <li>Git</li>
       </ul>
-    </nav>
-  </header>
+    </section>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm Mohammed Omer</h1>
-      <h2>DevOps Engineer | Automation Specialist | Cloud Enthusiast</h2>
-      <p>
-        Results-driven DevOps Engineer with expertise in automating infrastructure, deploying scalable AWS applications,
-        and optimizing cloud environments. Skilled in CI/CD, IaC, Kubernetes, and cloud monitoring. Passionate about
-        delivering secure, resilient, and cost-effective solutions.
-      </p>
-      <div class="tech-stack">
-        <i class="fab fa-aws" title="AWS"></i>
-        <i class="fas fa-code-branch" title="GitHub Actions"></i>
-        <i class="fab fa-docker" title="Docker"></i>
-        <i class="fas fa-network-wired" title="Kubernetes"></i>
-        <i class="fas fa-terminal" title="Terraform"></i>
-        <i class="fab fa-python" title="Python"></i>
-        <i class="fab fa-git-alt" title="Git"></i>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>E-commerce Platform</h3>
+        <p>✅ Built secure, scalable AWS infrastructure with EKS, RDS, and more. Automated deployments with Helm and GitHub Actions. Used SonarQube, Prometheus, Grafana, CloudWatch.</p>
       </div>
-    </div>
-  </section>
+      <div class="project">
+        <h3>Healthcare Application</h3>
+        <p>✅ Provisioned AWS resources with Terraform. CI/CD via GitHub Actions and ECR. Deployed frontend on S3 + CloudFront. Used CloudWatch and Cognito for secure access.</p>
+      </div>
+    </section>
 
-  <footer>
-    <div class="footer-content">
-      <p>© 2025 Mohammed Omer. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://github.com/DevOpsByOmer" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/omer-mohammed" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:dvop.omer@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-    </div>
-  </footer>
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:dvop.omer@gmail.com">dvop.omer@gmail.com</a></li>
+        <li>Phone: <a href="tel:+918328250142">+91-832-825-0142</a></li>
+        <li>GitHub: <a href="https://github.com/DevOpsByOmer" target="_blank">DevOpsByOmer</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/omer-mohammed" target="_blank">omer-mohammed</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Mohammed Omer. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
