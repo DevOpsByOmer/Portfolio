@@ -94,3 +94,9 @@ code {
 .color_sec {
     color: var(--secondary-color);
 }
+
+.iframe-container,
+.project-img {
+  width: 100%;
+  max-width: 100%;
+}

@@ -78,3 +78,27 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+
+.project-card {
+  margin-bottom: 2.5rem; /* Adds space after each project */
+}
+
+.iframe-container {
+  margin-top: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.view-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+    background-color: var(--primary-color-dark);
+}

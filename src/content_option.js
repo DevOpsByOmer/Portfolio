@@ -64,12 +64,20 @@ const services = [
 ];
 
 const dataportfolio = [
+    // Project 1
     {
         img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=800&q=80",
-        title: "Enterprise DevOps Project – CI/CD with Terraform, Ansible, Docker & GitHub Actions",
+        title: "InfraMorph: Dynamic AWS Infrastructure with CI/CD Automation",
         summary:
-            "A fullstack infrastructure automation and CI/CD deployment pipeline for containerized applications on AWS EC2. This project demonstrates building and pushing Docker images, provisioning AWS EC2 with Terraform, deploying apps with Ansible, and orchestrating all steps with GitHub Actions.",
-        tech: ["GitHub Actions", "Docker", "Terraform", "Ansible", "AWS EC2", "Flask"],
+            "A highly modular infrastructure-as-code pipeline that provisions and configures containerized applications on AWS EC2, with full automation from code to deploy using Terraform, Ansible, Docker, and GitHub Actions. This project highlights multi-layer automation, from image builds to provisioning and remote configuration — the foundation of scalable cloud-native delivery.",
+        tech: [
+            "🐳 Docker (Containerization)",
+            "⚙️ Ansible (Configuration Management)",
+            "🌱 Terraform (Infrastructure as Code)",
+            "🛠️ GitHub Actions (CI/CD Pipelines)",
+            "☁️ AWS EC2 (Cloud Compute)",
+            "🐍 Flask (Python Web Framework)"
+        ],
         architecture: `GitHub Repo
     │
     ├── GitHub Actions CI (Build & Push Docker)
@@ -82,28 +90,27 @@ const dataportfolio = [
                 ↓
        SSH into EC2 → Pull Docker Image → Run App Container`,
         link: "https://github.com/DevOpsByOmer/Projects",
-        slides: "https://www.canva.com/design/DAGrFuDtbFU/mWwwjCszdWm_U5DzZbcwSA/view?utm_content=DAGrFuDtbFU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3b80f8d25d",
-        iframe: `<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        iframe: `<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.2em; margin-bottom: 1.5em; overflow: hidden; border-radius: 8px;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
     src="https://www.canva.com/design/DAGrFuDtbFU/faFsKJtS_bBcsqQIeXRL5g/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
-</div>
-<a href="https://www.canva.com/design/DAGrFuDtbFU/faFsKJtS_bBcsqQIeXRL5g/view?utm_content=DAGrFuDtbFU&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Presentation - CI/CD with Terraform</a> by Omer Mohammed`
+</div>`
     },
+    // Project 2
     {
         img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?fit=crop&w=800&q=80",
-        title: "DevOps Full-Stack ECS Project",
+        title: "CloudPulse: Scalable Fullstack Delivery on AWS ECS",
         summary:
-            "A containerized React + FastAPI application deployed on AWS ECS Fargate with a complete CI/CD pipeline, blue/green deployments, and automated infrastructure. Features include ALB, ECR, and dynamic API routing.",
+            "A fully containerized, production-ready React + FastAPI web application deployed on AWS ECS Fargate, orchestrated via a complete CI/CD pipeline powered by GitHub Actions and provisioned using Terraform. Implements blue/green deployments, dynamic API routing through ALB, and artifact delivery via ECR. Designed for speed, scalability, and zero-downtime releases on serverless infrastructure.",
         tech: [
-            "React",
-            "FastAPI",
-            "Docker",
-            "GitHub Actions",
-            "Terraform",
-            "ECR",
-            "ECS Fargate",
-            "ALB",
+            "⚛️ React (Frontend Framework)",
+            "⚡ FastAPI (Backend Web Framework - Python)",
+            "🐳 Docker (Containerization)",
+            "🛠️ GitHub Actions (CI/CD Pipelines)",
+            "🌱 Terraform (Infrastructure as Code)",
+            "🐘 AWS ECR (Container Registry)",
+            "☁️ AWS ECS Fargate (Serverless Containers)",
+            "🕸️ AWS ALB (Load Balancer)"
         ],
         architecture: `User Browser
       │
@@ -116,30 +123,29 @@ React   FastAPI
   ▼         ▼
 ECS Fargate Cluster`,
         link: "https://github.com/DevOpsByOmer/Projects",
-        slides: "https://www.canva.com/design/DAGrF7Y0K3w/poFjVnYNZtZGjfxMZWOTxw/view?utm_content=DAGrF7Y0K3w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=poFjVnYNZtZGjfxMZWOTxw",
-        iframe: `<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        iframe: `<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.2em; margin-bottom: 1.5em; overflow: hidden; border-radius: 8px;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
     src="https://www.canva.com/design/DAGrF7Y0K3w/poFjVnYNZtZGjfxMZWOTxw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
-</div>
-<a href="https://www.canva.com/design/DAGrF7Y0K3w/poFjVnYNZtZGjfxMZWOTxw/view?utm_content=DAGrF7Y0K3w&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Presentation - DevOps Full-Stack ECS Project Overview</a> by Omer Mohammed`
+</div>`
     },
+    // Project 3
     {
         img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=800&q=80",
-        title: "Fullstack App with RDS, HTTPS, Auto-scaling & Secrets",
+        title: "VaultStack — Secure, Scalable App Deployment on AWS",
         summary:
-            "Production-ready FastAPI + React app, PostgreSQL (RDS), HTTPS via ACM+ALB, secrets in AWS Secrets Manager, ECS with auto-scaling. Managed by Terraform modules and GitHub Actions for CI/CD.",
+            "VaultStack is a production-grade deployment of a React + FastAPI fullstack application, architected for reliability, scalability, and security. The infrastructure is provisioned using Terraform modules, with seamless CI/CD pipelines powered by GitHub Actions.\n\nThe application is hosted on AWS ECS Fargate, backed by a managed PostgreSQL RDS database, and secured with HTTPS termination via ACM & ALB. Sensitive credentials are centrally managed using AWS Secrets Manager, and auto-scaling ensures efficient performance under variable workloads.",
         tech: [
-            "React",
-            "FastAPI",
-            "PostgreSQL",
-            "AWS RDS",
-            "ACM",
-            "ALB",
-            "Secrets Manager",
-            "ECS",
-            "Terraform",
-            "GitHub Actions",
+            "⚛️ React (Frontend Framework)",
+            "⚡ FastAPI (Backend Web Framework - Python)",
+            "🐘 PostgreSQL (Database)",
+            "☁️ AWS RDS (Managed Database)",
+            "🔒 AWS Secrets Manager (Secrets Management)",
+            "🕸️ AWS ALB (Load Balancer)",
+            "🔐 AWS ACM (SSL Certificates)",
+            "🐳 Docker (Containerization)",
+            "🌱 Terraform (Infrastructure as Code)",
+            "🛠️ GitHub Actions (CI/CD Pipelines)"
         ],
         architecture: `Internet
    │
@@ -155,22 +161,28 @@ ECS Fargate Cluster`,
 │React  │     │PostgreSQL│
 └───────┘     └──────────┘`,
         link: "https://github.com/DevOpsByOmer/Projects",
+        iframe: `<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.2em; margin-bottom: 1.5em; overflow: hidden; border-radius: 8px;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+    src="https://www.canva.com/design/DAGrIJQQMRo/82Hmro-5NtyBkrIsIFRyoQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>`
     },
+    // Project 4
     {
         img: "https://images.unsplash.com/photo-1465101178521-c1a9136a3c8b?fit=crop&w=800&q=80",
-        title: "Enterprise-Grade Fullstack K8s CI/CD with Monitoring",
+        title: "KubeView — GitOps-Driven CI/CD with Real-Time Monitoring",
         summary:
-            "React (Frontend) + FastAPI (Backend) deployed using Kubernetes, Helm, and ArgoCD, with CI/CD powered by GitHub Actions. Real-time monitoring via Prometheus and Grafana, GitOps workflow, and declarative deployments.",
+            "KubeView is a production-ready CI/CD platform for a fullstack React + FastAPI application, built on top of Kubernetes, and powered by Helm and ArgoCD for declarative, GitOps-based deployments. The CI/CD pipeline is fully automated using GitHub Actions, and real-time observability is enabled via Prometheus and Grafana, delivering robust operational insights.",
         tech: [
-            "Kubernetes",
-            "Helm",
-            "ArgoCD",
-            "Prometheus",
-            "Grafana",
-            "React",
-            "FastAPI",
-            "GitHub Actions",
-            "Docker",
+            "☸️ Kubernetes (Container Orchestration)",
+            "📦 Helm (Kubernetes Package Management)",
+            "🚀 ArgoCD (GitOps Continuous Delivery)",
+            "🛠️ GitHub Actions (CI/CD Pipelines)",
+            "📈 Prometheus (Metrics Monitoring)",
+            "📊 Grafana (Dashboard & Visualization)",
+            "⚛️ React (Frontend Framework)",
+            "⚡ FastAPI (Backend Web Framework - Python)",
+            "🐳 Docker (Containerization)"
         ],
         architecture: `GitHub Repo
    │
@@ -188,21 +200,28 @@ Kubernetes Cluster
    ├─ Services & Deployments
    └─ Monitored via Prometheus & Grafana`,
         link: "https://github.com/DevOpsByOmer/Projects",
+        iframe: `<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.2em; margin-bottom: 1.5em; overflow: hidden; border-radius: 8px;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+    src="https://www.canva.com/design/DAGrID3NS2w/dEqTxoZiM1ogA2bGXGn5Cg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>`
     },
+    // Project 5
     {
         img: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fit=crop&w=800&q=80",
-        title: "Fullstack DevOps Application Deployment",
+        title: "Resilient K8s App Stack with Secrets & Health",
         summary:
-            "Production-grade workflow for React (frontend), FastAPI (backend), PostgreSQL, Redis. All containerized, orchestrated with Kubernetes, Helm, and ArgoCD. Managed secrets, health checks, and automated deployments.",
+            "StackForge is a robust, fullstack deployment architecture featuring React (frontend), FastAPI (backend), PostgreSQL, and Redis, all containerized and orchestrated via Kubernetes. The stack is packaged using Helm, deployed with ArgoCD, and integrated with health checks, secret management, and CI/CD automation. This production-grade platform is engineered for resiliency, modularity, and operational",
         tech: [
-            "React",
-            "FastAPI",
-            "PostgreSQL",
-            "Redis",
-            "Docker",
-            "Kubernetes",
-            "Helm",
-            "ArgoCD",
+            "🐳 Docker (Containerization)",
+            "☸️ Kubernetes (Container Orchestration)",
+            "📦 Helm (Kubernetes Package Management)",
+            "🚀 ArgoCD (GitOps Continuous Delivery)",
+            "🛠️ GitHub Actions (CI/CD Pipelines)",
+            "📈 Prometheus (Metrics Monitoring)",
+            "📊 Grafana (Dashboard & Visualization)",
+            "⚛️ React (Frontend Framework)",
+            "⚡ FastAPI (Backend Web Framework - Python)"
         ],
         architecture: `React ───▶ FastAPI ───▶ PostgreSQL
    │             │
@@ -210,15 +229,11 @@ Kubernetes Cluster
            Redis
 (Deployed as containers on Kubernetes, managed by Helm & ArgoCD)`,
         link: "https://github.com/DevOpsByOmer/Projects",
-    },
-    {
-        img: "/images/resume.jpg",
-        title: "Resume",
-        summary:
-            "Download my resume (PDF) for more details on my experience and projects.",
-        tech: [],
-        architecture: "",
-        link: "/resume.pdf",
+        iframe: `<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.2em; margin-bottom: 1.5em; overflow: hidden; border-radius: 8px;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+    src="https://www.canva.com/design/DAGrIFENevw/LkOV2GRDBYlasRBkSSGCKw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>`
     },
 ];
 
